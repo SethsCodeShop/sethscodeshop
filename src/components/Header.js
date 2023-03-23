@@ -20,7 +20,15 @@ const Header = () => {
             rel="noreferrer"
             className="text-decoration-none"
           >
-            LinkedIn
+            LinkedIn |{' '}
+          </a>
+          <a 
+            href='https://github.com/SethsCodeShop?tab=repositories'
+            target="_blank"
+            rel="noreferrer"
+            className="text-decoration-none"
+          >
+            GitHub
           </a>
         </p>
       </header>

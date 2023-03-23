@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const { user, isAuthenticated, isLoading, loginWithRedirect, logout } = useAuth0();
@@ -21,11 +22,16 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+        <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/">
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </Link>
+            </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
             </li>
           </ul>
           <ul className="navbar-nav ml-auto">

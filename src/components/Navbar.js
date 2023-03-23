@@ -31,30 +31,17 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
                 {!isAuthenticated && (
                 <li className="nav-item">
-                    <a className="nav-link nav-link" onClick={() => loginWithRedirect()} rel="noopener noreferrer">
+                    <a className="nav-link" onClick={() => loginWithRedirect()} rel="noopener noreferrer">
                     Sign in/Sign up
                     </a>
                 </li>
                 )}
                 {isAuthenticated && (
-                <li className="nav-item dropdown">
-                    <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >
-                    {user.name}
-                    </a>
-                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a className="dropdown-item nav-link" href="#" onClick={() => logout()}>
-                        Logout
-                    </a>
-                    </div>
-                </li>
+                    <li className="nav-item">
+                        <a className="nav-link" onClick={() => logout()} rel="noopener noreferrer">
+                            Logout
+                        </a>
+                    </li>
                 )}
             </ul>
         </div>

@@ -7,7 +7,6 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Navbar from './components/Navbar';
 
-
 function App() {
   return (
     <div className="App">
@@ -18,26 +17,28 @@ function App() {
             <div className="card">
               <div className="card-body">
                 <Header />
-                <Experience />
+                <Summary />
+              </div>
+            </div>
+            <div className="card mt-3 mb-3">
+              <div className="card-body">
+                <TechnicalProficiency />
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-body">
+                <Education />
               </div>
             </div>
           </div>
           <div className="col-md-6">
             <div className="card">
               <div className="card-body">
-                <Summary />
+                <Experience />
               </div>
-          </div>
-          <div className="card mt-3 mb-3">
-            <div className="card-body"></div>
-              <TechnicalProficiency />
-              </div>
-          </div>
-          <div className="card">
-            <div className="card-body"></div>
-              <Education />
             </div>
           </div>
+        </div>
       </div>
     </div>
   );

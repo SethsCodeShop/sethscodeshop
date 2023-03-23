@@ -5,7 +5,6 @@ const Experience = () => {
   return (
     <section>
       <h2 className="mb-3">Experience</h2>
-      
       <div className="mb-4">
         <h4>Okta – Associate CIAM Specialist</h4>
         <p><strong>May 2022 – February 2023</strong></p>
@@ -18,7 +17,6 @@ const Experience = () => {
           <li>Developed custom web applications with REST APIs using the .Net framework that utilized the Auth0 product to demonstrate different key features of the Auth0 platform.</li>
         </ul>
       </div>
-
       <div className="mb-4">
         <h4>Heartland Payment Services – Software Engineer</h4>
         <p><strong>May 2021 – May 2022</strong></p>
@@ -28,7 +26,6 @@ const Experience = () => {
           <li>Created User Interface (UI) and User Experience (UX) for updating and resetting Okta MFA factors.</li>
         </ul>
       </div>
-
       <div className="mb-4">
         <h4>Carter Healthcare – Software Engineer</h4>
         <p><strong>February 2019 – May 2021</strong></p>
@@ -39,7 +36,6 @@ const Experience = () => {
           <li>Provided mobile application support utilizing Swift front end design with .Net Web API back end technology.</li>
         </ul>
       </div>
-      
     </section>
   );
 };

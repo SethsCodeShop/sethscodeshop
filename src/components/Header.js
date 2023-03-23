@@ -13,7 +13,7 @@ const Header = () => {
       <header>
         <h1 className="display-4">Seth Garlett</h1>
         <p>
-          skgarlett@gmail.com | Number Upon Request |{' '}
+          <a href='mailto:skgarlett@gmail.com'>skgarlett@gmail.com</a> | Number Upon Request |{' '}
           <a
             href="https://www.linkedin.com/in/sethgarlett"
             target="_blank"

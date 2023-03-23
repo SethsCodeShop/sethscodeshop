@@ -13,15 +13,16 @@ const Header = () => {
       <header>
         <h1 className="display-4">Seth Garlett</h1>
         <p>
-          <a href='mailto:skgarlett@gmail.com'>skgarlett@gmail.com</a> | Number Upon Request |{' '}
+          <a href='mailto:skgarlett@gmail.com'>skgarlett@gmail.com</a> |{' '}
           <a
             href="https://www.linkedin.com/in/sethgarlett"
             target="_blank"
             rel="noreferrer"
             className="text-decoration-none"
           >
-            LinkedIn |{' '}
+            LinkedIn
           </a>
+          <a>|{' '}</a>
           <a 
             href='https://github.com/SethsCodeShop?tab=repositories'
             target="_blank"

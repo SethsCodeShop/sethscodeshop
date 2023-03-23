@@ -19,7 +19,6 @@ function App() {
               <div className="card-body">
                 <Header />
                 <Experience />
-                <Education />
               </div>
             </div>
           </div>
@@ -27,11 +26,18 @@ function App() {
             <div className="card">
               <div className="card-body">
                 <Summary />
-                <TechnicalProficiency />
               </div>
+          </div>
+          <div className="card mt-3 mb-3">
+            <div className="card-body"></div>
+              <TechnicalProficiency />
+              </div>
+          </div>
+          <div className="card">
+            <div className="card-body"></div>
+              <Education />
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

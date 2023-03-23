@@ -1,0 +1,10 @@
+/* src/dark-theme.css */
+.dark-theme {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.dark-theme .card {
+  background-color: #444;
+  border-color: #222;
+}

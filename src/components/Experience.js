@@ -33,7 +33,7 @@ const Experience = () => {
             {job.Responsibilities.map(responsibility => (
               <li key={responsibility}>{responsibility}</li>
             ))}
-          </ul>ç
+          </ul>
         </div>
       ))}
     </section>

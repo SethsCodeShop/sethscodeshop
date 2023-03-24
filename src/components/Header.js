@@ -1,15 +1,16 @@
 import React from 'react';
-import ProfileImage from '../images/LinkedIn.jpg';
+import ImageCarousel from './ImageCarousel';
 
 const Header = () => {
   return (
     <div className="text-center mb-4">
-      <img
+      {/* <img
         src={ProfileImage}
         alt="Profile"
         className="rounded-circle mb-3"
         style={{ width: '150px', height: '150px', objectFit: 'cover' }}
-      />
+      /> */}
+      <ImageCarousel />
       <header>
         <h1 className="display-4">Seth Garlett</h1>
         <p>
@@ -22,7 +23,7 @@ const Header = () => {
           >
             LinkedIn
           </a>
-          <a>|{' '}</a>
+          <a>{' '}|{' '}</a>
           <a 
             href='https://github.com/SethsCodeShop?tab=repositories'
             target="_blank"

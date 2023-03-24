@@ -10,7 +10,7 @@ const About = () => {
                     <h2 className="card-title text-center mt-4">About This Application</h2>
                     <div className="card-body">
                     <p>
-                        This application is a personal portfolio website showcasing my software engineering skills, experience, and education. It is built using React, Bootstrap 4.6.2, Auth0 for authentication, and hosted on Vercel.
+                        This application is a personal portfolio website showcasing my software engineering skills, experience, and education. It is built using React, Next.js APIs, Bootstrap 4.6.2, Auth0 for authentication, and hosted on Vercel.
                     </p>
                     </div>
                 </div>
@@ -23,9 +23,9 @@ const About = () => {
                             <li>
                             <strong>React:</strong> A popular JavaScript library for building user interfaces. It allows us to create reusable UI components and manage the application's state efficiently.
                             </li>
-                            {/* <li>
+                            <li>
                             <strong>Next.js:</strong> A powerful framework for building server-rendered React applications. It provides features like static site generation, server-side rendering, and API routes, which enable us to create a high-performance web app.
-                            </li> */}
+                            </li>
                             <li>
                             <strong>Bootstrap 4.6.2:</strong> A widely-used CSS framework that helps us create responsive, mobile-first designs. It includes pre-built components, utilities, and a responsive grid system, making it easy to create a professional-looking website with minimal effort.
                             </li>

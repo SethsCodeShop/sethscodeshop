@@ -68,10 +68,7 @@ const Navbar = ({ onToggleTheme, darkTheme }) => {
               <div>
                 <button className="dropdown-item" onClick={onToggleTheme}>Toggle Theme</button>
                 {!isAuthenticated ? (
-                  <button className="dropdown-item" onClick={() => loginWithRedirect()}>Login</button>
-                ) : null}
-                {!isAuthenticated ? (
-                  <button className="dropdown-item" onClick={() => loginWithRedirect()}>Sign up</button>
+                  <button className="dropdown-item" onClick={() => loginWithRedirect()}>Login/Sign UP</button>
                 ) : null}
                 {isAuthenticated ? (
                   <button className="dropdown-item" onClick={() => logout()}>Logout</button>
@@ -99,7 +96,7 @@ const Navbar = ({ onToggleTheme, darkTheme }) => {
                   {isAuthenticated ? (
                     <button className="dropdown-item" onClick={() => logout()}>Logout</button>
                   ) : (
-                    <button className="dropdown-item" onClick={() => loginWithRedirect()}>Login</button>
+                    <button className="dropdown-item" onClick={() => loginWithRedirect()}>Login/Sign Up</button>
                   )}
                 </div>
               </div>

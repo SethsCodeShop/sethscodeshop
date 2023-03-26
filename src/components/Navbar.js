@@ -68,7 +68,7 @@ const Navbar = ({ onToggleTheme, darkTheme }) => {
               <div>
                 <button className="dropdown-item" onClick={onToggleTheme}>Toggle Theme</button>
                 {!isAuthenticated ? (
-                  <button className="dropdown-item" onClick={() => loginWithRedirect()}>Login/Sign UP</button>
+                  <button className="dropdown-item" onClick={() => loginWithRedirect()}>Login/Sign Up</button>
                 ) : null}
                 {isAuthenticated ? (
                   <button className="dropdown-item" onClick={() => logout()}>Logout</button>

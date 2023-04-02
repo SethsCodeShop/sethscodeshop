@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Summary = () => {
-
   const [summary, setSummary] = useState([]);
-  const { getAccessTokenSilently } = useAuth0();
 
   useEffect(() => {
     const getSummary = async () => {

@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+imprt React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0 } from '@auth0/auth0-react';
 import WithAuthenticationRequired from './withAuthenticationRequired';
 
 const Experience = () => {
   const [experience, setExperience] = useState([]);
-  // const { getAccessTokenSilently } = useAuth0();
+  const { getAccessTokenSilently } = useAuth0();
 
   useEffect(() => {
     const getExperience = async () => {
-      // const token = await getAccessTokenSilently();
+      const token = await getAccessTokenSilently();
       const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/api/profileInfo`, {
         headers: {
-          // Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${token}`,
           'Access-Control-Allow-Origin': true
         }
       });
@@ -20,7 +20,7 @@ const Experience = () => {
     };
 
     getExperience();
-  });
+  }, [getAccessTokenSilently]);
 
   return (
     <section>

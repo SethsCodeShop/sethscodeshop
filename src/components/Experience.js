@@ -20,7 +20,7 @@ const Experience = () => {
     };
 
     getExperience();
-  }, [getAccessTokenSilently]);
+  }, []);
 
   return (
     <section>

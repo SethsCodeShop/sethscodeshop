@@ -12,7 +12,7 @@ const Experience = () => {
       // const token = await getAccessTokenSilently();
       const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/api/profileInfo`, {
         headers: {
-          Authorization: `Bearer ${token}`,
+          // Authorization: `Bearer ${token}`,
           'Access-Control-Allow-Origin': true
         }
       });

@@ -14,7 +14,7 @@ root.render(
       clientId={process.env.REACT_APP_AUTH0_CLIENT_ID}
       redirectUri={window.location.origin}
       cacheLocation='localstorage'
-      onRedirectCallback={process.env.REACT_APP_SERVER_URL}
+      onRedirectCallback={window.location.origin}
       audience={process.env.REACT_APP_AUTH0_AUDIENCE}
       >
       <App />
